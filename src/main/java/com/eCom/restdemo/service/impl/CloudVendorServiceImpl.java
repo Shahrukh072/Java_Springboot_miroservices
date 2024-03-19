@@ -26,7 +26,7 @@ public class CloudVendorServiceImpl implements CloudVendorService{
             return "Failure";
           }
       cloudvendorRepository.save(cloudvendor);  
-      return " created Success";
+      return "created Success";
     }
 
     @Override
@@ -35,7 +35,7 @@ public class CloudVendorServiceImpl implements CloudVendorService{
             return "Failure: CloudVendor is null";
         }
         cloudvendorRepository.save(cloudVendor);
-        return " Updated Successfully";
+        return "Updated Successfully";
     }
 
     @Override
